@@ -11,26 +11,26 @@ app = Flask(__name__)
 
 
 class Character(object):
-    def __init__(self, data):
-        self.player_name = data['player']
+    def __init__(self, **kwargs):
+        self.player_name = kwargs.get("player", '')
 
-        self.gender = data['gender']
+        self.gender = kwargs.get("gender", 'random')
         if self.gender =='random':
             self.gender = choice(['M', 'F'])
 
 
-        self.race = data['race']
+        self.race = kwargs.get("race", 'random HIGH_FANTASY')
         if self.race.split(' ')[0] == 'random':
             self.race = self.random_race(self.race.split(' ')[1])
         self.subrace = 'NONE'
         if subraces.get(self.race):
             self.subrace = choice(subraces[self.race])
         
-
-        if data['name_selector'] == True:
+        random_name = kwargs.get("random_name", True)
+        if random_name:
             self.character_name = self.random_name(self.race, self.gender)
         else:
-            self.character_name = data['character']
+            self.character_name = kwargs.get("character", '')
 
 
         (self.size, self.speed, extra_language, racial_bonuses, self.racial_abilities) = racial_traits[(self.race, self.subrace)]
@@ -90,6 +90,9 @@ class Character(object):
         character_sheet.append(self.racial_abilities)
 
         return character_sheet
+    
+    def export(self):
+        return self.player_name, self.character_name
 
 
 
@@ -104,7 +107,7 @@ races_table = {'HIGH_FANTASY' : [(20, 'Human'), (30, 'Halfling'),
                                  (85, 'Tiefling'), (90, 'Goliath'),
                                  (93, 'Elf'), (95, 'Half-Orc'),
                                  (97, 'Aarakocra'), (100, 'Dragonborn')]
-                                 }
+               }
 
 
 subraces = {'Halfling' : ['Lightfoot', 'Stout'],
@@ -150,33 +153,22 @@ def hello():
 
 
 
-@app.route('/api_post', methods=['POST'])
-def make_character():
-    data = request.form
-    character = Character(data)
-    render_template("accueil.html", )
-    return jsonify()
-
-
-
-@app.route('/create', methods=('GET', 'POST'))
+@app.route('/sheet', methods=['POST'])
 def create():
-    if request.method == 'POST':
-        data = request.form
-        #title = request.form['title']
-        #content = request.form['content']
+    player_name = request.form['player']
+    character_name = request.form['character']
+    random_name = request.form['name_selector']
+    gender = request.form['gender']
+    race = request.form['race']
 
-        #if not title:
-        #    flash('Title is required!')
-        #else:
-        #    conn = get_db_connection()
-        #    conn.execute('INSERT INTO posts (title, content) VALUES (?, ?)',
-        #                 (title, content))
-        #    conn.commit()
-        #    conn.close()
-        #    return redirect(url_for('index'))
-        return redirect(url_for('index'))
-    return render_template('create.html')
+    character = Character(player = player_name, character = character_name, gender = gender, race = race, random_name = random_name)
+
+    data = character.export()
+    return render_template("sheet.html", player_name = data[0], character_name = data[1])
+
+
+
+
 
 
 if __name__ == '__main__':

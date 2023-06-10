@@ -12,13 +12,11 @@
 <body>
     <div class="character_sheet">
         <h1>Level 0 DnD character generator</h1>
-        <form action="/create" method="POST">
+        <form action="/sheet" method="POST">
               <p>Your name/alias:</p>
-              <textarea id="texte" cols="50" name="player" rows="1">
-              </textarea>
+              <textarea id="player" cols="30" name="player" rows="1"></textarea>
               <p>Your character's name:</p>
-              <textarea id="texte" cols="50" name="character" rows="1">
-              </textarea>
+              <textarea id="character" cols="30" name="character" rows="1"></textarea>
               <div>
                 <input type="checkbox" id="name_selector" name="name_selector" unchecked>
                 <label for="name_selector">Random name (based on race and gender)</label>
@@ -33,7 +31,7 @@
                 <label for="F">F</label>
 
                 <input type="radio" id="random" name="gender" value="R">
-                <label for="random">random</label>
+                <label for="random">Random</label>
               </div>
 
               <p>Your character race/species (subrace will be random):</p>
@@ -50,7 +48,8 @@
                 <option value="Half-Orc">Half-Orc</option>
                 <option value="Aarakocra">Aarakocra</option>
                 <option value="Dragonborn">Dragonborn</option>
-            </select>
+              </select>
+
               <p>Submit to get your brand new adventurer!</p>
               <p><button type="submit" class="btn btn-primary btn-block btn-large" value="Submit">Submit</button></p>
         </form>
