@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html >
-  <html>
+<html>
     <head>
-        <title>{{ title }}</title>
+        <title>Character sheet</title>
     </head>
     <body>
-        <h1>Hello {{ username }}</h1>
-    </body>
-</html>
-</html>
+        <h1><span style="font-size:36px"><strong>{{ character_name }}</strong></span></h1>
 
+        <p><em>Played by: {{ player_name }}</em></p>
+
+        <p><span style="font-size:18px">{{ gender }} {{ race }} ({{ size }}) {{ occupation }}</span></p>
+
+        <p>HP: {{ HP }}&nbsp; -&nbsp; AC: {{ AC }}&nbsp; -&nbsp; Initiative: {{ Init }}&nbsp; -&nbsp; Speed: {{ Spd }}</p>
+
+        <p><u>Attributes (modifiers):</u></p>
+
+        <ul>
+            <li>Strength: {{ STR }} ({{ mod_STR }})</li>
+            <li>Dexterity: {{ DEX }} ({{ mod_DEX }})</li>
+            <li>Constitution: {{ CON }} ({{ mod_CON }})</li>
+            <li>Intelligence: {{ INT }} ({{ mod_INT }})</li>
+            <li>Wisdom: {{ WIS }} ({{ mod_WIS }})</li>
+            <li>Charisma: {{ CHA }} ({{ mod_CHA }})</li>
+        </ul>
+
+        <p><u>Proficiency:</u> {{ proficiency }} (Bonus <strong>{{ mod_prof }}</strong>)</p>
+
+        <p><u>Attack:</u> {{ weapon }}, <strong>{{ ATK }}</strong>, {{ DMG }} <em>{{ weapon_attributes }}</em></p>
+
+        <p><u>Racial traits:</u></p>
+
+        <ul>
+            <li>{{ RT1 }}</li>
+            <li>{{ RT2 }}</li>
+        </ul>
+
+        <p><u>Inventory:</u></p>
+
+        <ul>
+            <li>{{ clothes }} clothes</li>
+            <li>{{ weapon }}</li>
+            <li>{{ item }}</li>
+            <li>{{ trinket }}</li>
+            <li>{{ gold }}</li>
+        </ul>
+    </body>
+
+</html>

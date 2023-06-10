@@ -12,16 +12,16 @@
 <body>
     <div class="character_sheet">
         <h1>Level 0 DnD character generator</h1>
-        <form action="/sheet" method="POST">
+        <form action="/char-sheet" methods="POST">
               <p>Your name/alias:</p>
-              <textarea id="player" cols="30" name="player" rows="1"></textarea>
+              <p><input type = "text" name = "player" /></p>
               <p>Your character's name:</p>
               <textarea id="character" cols="30" name="character" rows="1"></textarea>
               <div>
                 <input type="checkbox" id="name_selector" name="name_selector" unchecked>
                 <label for="name_selector">Random name (based on race and gender)</label>
               </div>
-              <p>Your character's gender (for naming purposes):</p>
+              <p>Your character's gender:</p>
               <div>
                 <input type="radio" id="male" name="gender" value="M"
                        checked>
