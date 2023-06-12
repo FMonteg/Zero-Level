@@ -8,41 +8,41 @@
 
         <p><em>Played by: {{ player_name }}</em></p>
 
-        <p><span style="font-size:18px">{{ gender }} {{ race }} ({{ size }}) {{ occupation }}</span></p>
+        <p><span style="font-size:18px">{{ gender }} {{ race }} {{ occupation }}</span></p>
 
-        <p>HP: {{ HP }}&nbsp; -&nbsp; AC: {{ AC }}&nbsp; -&nbsp; Initiative: {{ Init }}&nbsp; -&nbsp; Speed: {{ Spd }}</p>
+        <p>HP: {{ HP }}&nbsp; -&nbsp; AC: {{ AC }}&nbsp; -&nbsp; Initiative: {{ Init }}&nbsp; -&nbsp; Speed: {{ Spd }}&nbsp; -&nbsp; Size: {{ size }}</p>
 
         <p><u>Attributes (modifiers):</u></p>
 
-        <ul>
-            <li>Strength: {{ STR }} ({{ mod_STR }})</li>
-            <li>Dexterity: {{ DEX }} ({{ mod_DEX }})</li>
-            <li>Constitution: {{ CON }} ({{ mod_CON }})</li>
-            <li>Intelligence: {{ INT }} ({{ mod_INT }})</li>
-            <li>Wisdom: {{ WIS }} ({{ mod_WIS }})</li>
-            <li>Charisma: {{ CHA }} ({{ mod_CHA }})</li>
-        </ul>
+        <p><ul>
+            <li>Strength: {{ STR }} (<strong>{{ mod_STR }}</strong>)</li>
+            <li>Dexterity: {{ DEX }} (<strong>{{ mod_DEX }}</strong>)</li>
+            <li>Constitution: {{ CON }} (<strong>{{ mod_CON }}</strong>)</li>
+            <li>Intelligence: {{ INT }} (<strong>{{ mod_INT }}</strong>)</li>
+            <li>Wisdom: {{ WIS }} (<strong>{{ mod_WIS }}</strong>)</li>
+            <li>Charisma: {{ CHA }} (<strong>{{ mod_CHA }}</strong>)</li>
+        </ul></p>
 
-        <p><u>Proficiency:</u> {{ proficiency }} (Bonus <strong>{{ mod_prof }}</strong>)</p>
+        <p><u>Proficiency:</u> {{ proficiency }} (<strong>{{ mod_prof }}</strong>)</p>
 
-        <p><u>Attack:</u> {{ weapon }}, <strong>{{ ATK }}</strong>, {{ DMG }} <em>{{ weapon_attributes }}</em></p>
+        <p><u>Attack:</u> {{ weapon }}, <strong>{{ ATK }}</strong>, {{ DMG }}, <em>{{ weapon_attributes }}</em></p>
 
         <p><u>Racial traits:</u></p>
 
-        <ul>
-            <li>{{ RT1 }}</li>
-            <li>{{ RT2 }}</li>
-        </ul>
+        <p><ul>
+            <li><u>{{ RT1 }}:</u> {{ RTD1 }}</li>
+            <li><u>{{ RT2 }}:</u> {{ RTD2 }}</li>
+        </ul></p>
 
         <p><u>Inventory:</u></p>
 
-        <ul>
+        <p><ul>
             <li>{{ clothes }} clothes</li>
             <li>{{ weapon }}</li>
             <li>{{ item }}</li>
             <li>{{ trinket }}</li>
             <li>{{ gold }}</li>
-        </ul>
+        </ul></p>
     </body>
 
 </html>

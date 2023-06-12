@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html >
+
+<script type="text/javascript">
+  function EnableDisableTextBox(chkRdmName) {
+      var txtCharName = document.getElementById("character");
+      txtCharName.disabled = chkRdmName.checked ? true : false;
+      if (!txtCharName.disabled) {
+        txtCharName.focus();
+      }
+  }
+</script>
+
+
 <head>
     <meta charset="UTF-8">
     <title>Level 0 DnD character generator</title>
@@ -16,9 +28,9 @@
               <p>Your name/alias:</p>
               <p><input type = "text" name = "player" /></p>
               <p>Your character's name:</p>
-              <textarea id="character" cols="30" name="character" rows="1"></textarea>
+              <p><input type = "text" name = "character", id = "character" disabled="disabled" /></p>
               <div>
-                <input type="checkbox" id="name_selector" name="name_selector" unchecked>
+                <input type="checkbox" id="name_selector" name="name_selector" onclick="EnableDisableTextBox(this)" checked>
                 <label for="name_selector">Random name (based on race and gender)</label>
               </div>
               <p>Your character's gender:</p>
