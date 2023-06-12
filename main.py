@@ -587,12 +587,12 @@ names_table = {#Family names in (race, O), first names in (race, M) and (race, F
     ('Elf', 'F') : ['Adrie', 'Althaea', 'Anastrianna', 'Andraste', 'Antinua', 'Bethrynna', 'Birel', 'Caelynn', 'Drusilia', 'Enna', 'Felosial', 'Ielenia', 'Jelenneth', 'Keyleth', 'Leshanna', 'Lia', 'Meriele', 'Mialee', 'Naivara', 'Quelenna', 'Quillathe', 'Sariel', 'Shanairra', 'Shava', 'Silaqui', 'Theirastra', 'Thia', 'Vadania', 'Valanthe', 'Xanaphia'],
 
     ("Halfling", "M") : ['Alton', 'Ander', 'Cade', 'Corrin', 'Eldon', 'Errich', 'Finnan', 'Garret', 'Lindal', 'Lyle', 'Merric', 'Milo', 'Osborn', 'Perrin', 'Reed', 'Roscoe', 'Wellby'],
-    ("Halfling", "F") : ['Andry', 'Bree', 'Callie', 'Cora', 'EuphÃ©mie', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Merla', 'Nedda', 'Paela', 'Portia', 'SÃ©raphine', 'Shaena', 'Trym', 'Vani', 'Verna'],
-    ("Halfling", "O") : ['Bonbaril', 'FeuilledethÃ©', 'GrandprÃ©', 'Hautecolline', 'LancepavÃ©', 'PasdÃ©pines', 'Ramassebrosse', 'Roulecolline', 'Souslabranche', 'Vertbouteille'],
+    ("Halfling", "F") : ['Andry', 'Bree', 'Callie', 'Cora', 'Euphémie', 'Jillian', 'Kithri', 'Lavinia', 'Lidda', 'Merla', 'Nedda', 'Paela', 'Portia', 'Séraphine', 'Shaena', 'Trym', 'Vani', 'Verna'],
+    ("Halfling", "O") : ['Bonbaril', 'Feuilledethé', 'Grandpré', 'Hautecolline', 'Lancepavé', 'Pasdépines', 'Ramassebrosse', 'Roulecolline', 'Souslabranche', 'Vertbouteille'],
 
-    ("Dwarf", "M") : ['Adrik', 'AlbÃ©rich', 'Baern', 'Barendd', 'Brottor', 'Bruenor', 'Dain', 'Darrak', 'Delg', 'Eberk', 'Einkil', 'Fargrim', 'Flint', 'Gardain', 'Harbek', 'Kildrak', 'Morgran', 'Orsik', 'Oskar', 'Rangrim', 'Rurik', 'Taklinn', 'Thoradin', 'Thorin', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Veit', 'Vondal'],
+    ("Dwarf", "M") : ['Adrik', 'Albérich', 'Baern', 'Barendd', 'Brottor', 'Bruenor', 'Dain', 'Darrak', 'Delg', 'Eberk', 'Einkil', 'Fargrim', 'Flint', 'Gardain', 'Harbek', 'Kildrak', 'Morgran', 'Orsik', 'Oskar', 'Rangrim', 'Rurik', 'Taklinn', 'Thoradin', 'Thorin', 'Tordek', 'Traubon', 'Travok', 'Ulfgar', 'Veit', 'Vondal'],
     ("Dwarf", "F") : ['Ambre', 'Artin', 'Audhild', 'Bardryn', 'Dagnal', 'Diesa', 'Eldeth', 'Falkrunn', 'Finellen', 'Gunnloda', 'Gurdis', 'Helja', 'Hlin', 'Kathra', 'Kristryd', 'Ilde', 'Liftrasa', 'Mardred', 'Riswynn', 'Sannl', 'Torbera', 'Torgga', 'Vistra'],
-    ("Dwarf", "O") : ['Balderk', 'BarbegelÃ©e', 'Dankil', 'Forgefeu', 'Fortenclume', 'Gorunn', 'Holderhek', 'Loderr', 'Lutgehr', 'Marteaudeguerre', 'Poing de Fer', 'Rumnaheim', 'Strakeln', 'Torunn', 'Ungart'],
+    ("Dwarf", "O") : ['Balderk', 'Barbegelée', 'Dankil', 'Forgefeu', 'Fortenclume', 'Gorunn', 'Holderhek', 'Loderr', 'Lutgehr', 'Marteaudeguerre', 'Poing de Fer', 'Rumnaheim', 'Strakeln', 'Torunn', 'Ungart'],
 
     ("Half-Orc", "M") : ['Dench', 'Feng', 'Gell', 'Henk', 'Holg', 'Imsh', 'Keth', 'Krusk', 'Mhurren', 'Ront', 'Shump', 'Thokk'],
     ("Half-Orc", "F") : ['Baggi', 'Emen', 'Engong', 'Kansif', 'Myev', 'Neega', 'Ovak', 'Ownka', 'Shautha', 'Sutha', 'Vola', 'Volen', 'Yevelda'],
