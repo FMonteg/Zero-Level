@@ -1,0 +1,323 @@
+{
+    "Light hammer": [
+        0,
+        "1d4 b",
+        [
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Handaxe": [
+        0,
+        "1d6 s",
+        [
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Whip": [
+        0,
+        "1d4 s",
+        [
+            "Finesse",
+            "Reach"
+        ]
+    ],
+    "Maul": [
+        0,
+        "2d6 b",
+        [
+            "Heavy",
+            "Two-handed"
+        ]
+    ],
+    "Quarterstaff": [
+        0,
+        "1d6 b",
+        [
+            "Versatile (1d8)"
+        ]
+    ],
+    "Club": [
+        0,
+        "1d4 b",
+        [
+            "Light"
+        ]
+    ],
+    "Butcher knife (handaxe)": [
+        0,
+        "1d6 s",
+        [
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Net": [
+        1,
+        "0 b",
+        [
+            "Thrown",
+            "Special"
+        ]
+    ],
+    "Greataxe": [
+        0,
+        "2d6 s",
+        [
+            "Heavy",
+            "Two-handed"
+        ]
+    ],
+    "Bone knife (dagger)": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Dagger": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Broom (quarterstaff)": [
+        0,
+        "1d6 b",
+        [
+            "Versatile (1d8)"
+        ]
+    ],
+    "Shortsword": [
+        0,
+        "1d6 p",
+        [
+            "Finesse",
+            "Light"
+        ]
+    ],
+    "Scimitar": [
+        0,
+        "1d6 s",
+        [
+            "Finesse",
+            "Light"
+        ]
+    ],
+    "Blowgun (10 needles)": [
+        1,
+        "1d1 p",
+        [
+            "Loading"
+        ]
+    ],
+    "Shortbow (20 arrows)": [
+        1,
+        "1d6 p",
+        [
+            "Two-handed"
+        ]
+    ],
+    "Flail": [
+        0,
+        "1d8 b",
+        []
+    ],
+    "Knife (dagger)": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Shortbow": [
+        1,
+        "1d6 p",
+        [
+            "Two-handed"
+        ]
+    ],
+    "Brush (club)": [
+        0,
+        "1d4 b",
+        [
+            "Light"
+        ]
+    ],
+    "Pitchfork (spear)": [
+        0,
+        "1d6 p",
+        [
+            "Versatile (1d8)",
+            "Thrown"
+        ]
+    ],
+    "Cast Iron Pan (club)": [
+        0,
+        "1d4 b",
+        [
+            "Light"
+        ]
+    ],
+    "Steel Beer Stein (club)": [
+        0,
+        "1d4 b",
+        [
+            "Light"
+        ]
+    ],
+    "Scissors (dagger)": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Chisel (dagger)": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Greatclub": [
+        0,
+        "1d8 b",
+        [
+            "Two-handed"
+        ]
+    ],
+    "Shears (shortsword)": [
+        0,
+        "1d6 p",
+        [
+            "Finesse",
+            "Light"
+        ]
+    ],
+    "Longsword": [
+        0,
+        "1d8 s",
+        [
+            "Versatile (1d10)"
+        ]
+    ],
+    "Sickle": [
+        0,
+        "1d4 s",
+        [
+            "Light"
+        ]
+    ],
+    "Hand Crossbow": [
+        1,
+        "1d6 p",
+        [
+            "Light",
+            "Loading"
+        ]
+    ],
+    "Rolling Pin (club)": [
+        0,
+        "1d4 b",
+        [
+            "Light"
+        ]
+    ],
+    "Compass (dagger)": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Mace": [
+        0,
+        "1d6 b",
+        []
+    ],
+    "Light Crossbow (20 Bolts)": [
+        1,
+        "1d8 p",
+        [
+            "Two-handed",
+            "Loading"
+        ]
+    ],
+    "Quarterstaff (with religious ornament)": [
+        0,
+        "1d6 b",
+        [
+            "Versatile (1d8)"
+        ]
+    ],
+    "Longbow (10 arrows)": [
+        1,
+        "1d8 p",
+        [
+            "Heavy",
+            "Two-handed"
+        ]
+    ],
+    "Spear": [
+        0,
+        "1d6 p",
+        [
+            "Versatile (1d8)",
+            "Thrown"
+        ]
+    ],
+    "Shortbow (10 arrows)": [
+        1,
+        "1d6 p",
+        [
+            "Two-handed"
+        ]
+    ],
+    "Rapier": [
+        0,
+        "1d8 p",
+        [
+            "Finesse"
+        ]
+    ],
+    "Ornate Dagger": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ],
+    "Wooden spoon (club)": [
+        0,
+        "1d4 b",
+        [
+            "Light"
+        ]
+    ],
+    "Quill (dagger)": [
+        0,
+        "1d4 p",
+        [
+            "Finesse",
+            "Light",
+            "Thrown"
+        ]
+    ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Level 0 Character</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Level 0 Character</h1>
+        <form action="{{ url_for('lvl0.generate_character') }}" method="post">
+            <div class="form-group">
+                <p>Your name (or alias):</p>
+                <p><input type = "text" id="player_name" name="player_name" /></p>
+            </div>
+            
+
+            <div class="form-group">
+                <p>Your character's name:</p>
+                <p><input type = "text" name = "character_name", id = "character_name" /></p>
+                <div>
+                    <input type="checkbox" id="random_name" name="random_name" value="true">
+                    <label for="random_name">Random name (based on race and gender)</label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <p>Your character's gender:</p>
+                <div>
+                <input type="radio" id="male" name="gender" value="M">
+                <label for="M">M</label>
+    
+                <input type="radio" id="female" name="gender" value="F">
+                <label for="F">F</label>
+    
+                <input type="radio" id="random" name="gender" value="R" checked>
+                <label for="random">Random</label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <p>Your character race/species (subrace will be random):</p>
+                <select name="race" id="race">
+                    <option value="random HIGH_FANTASY">--Random (High fantasy)--</option>
+                    <option value="random HUMAN_DOMINATED">--Random (Human dominated)--</option>
+                    <option value="Human">Human</option>
+                    <option value="Halfling">Halfling</option>
+                    <option value="Dwarf">Dwarf</option>
+                    <option value="Gnome">Gnome</option>
+                    <option value="Tiefling">Tiefling</option>
+                    <option value="Goliath">Goliath</option>
+                    <option value="Elf">Elf</option>
+                    <option value="Half-Orc">Half-Orc</option>
+                    <option value="Aarakocra">Aarakocra</option>
+                    <option value="Dragonborn">Dragonborn</option>
+                 </select>
+            </div>
+            
+
+            <div class="form-group">
+                <p><button type="submit" class="btn btn-primary btn-block btn-large" value="Submit">Generate Character</button></p>
+            </div>
+            
+
+        </form>
+    </div>
+
+    <script>
+        const characterNameInput = document.getElementById('character_name');
+        const randomNameCheckbox = document.getElementById('random_name');
+
+        randomNameCheckbox.addEventListener('change', () => {
+            characterNameInput.disabled = randomNameCheckbox.checked;
+        });
+    </script>
+</body>
+</html>

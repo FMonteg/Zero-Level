@@ -1,0 +1,30 @@
+{
+    "Halfling": [
+        "Lightfoot",
+        "Stout"
+    ],
+    "Dwarf": [
+        "Hill",
+        "Mountain"
+    ],
+    "Gnome": [
+        "Rock",
+        "Forest"
+    ],
+    "Elf": [
+        "High",
+        "Wood"
+    ],
+    "Dragonborn": [
+        "Red",
+        "Blue",
+        "Green",
+        "White",
+        "Black",
+        "Brass",
+        "Copper",
+        "Bronze",
+        "Silver",
+        "Gold"
+    ]
+}

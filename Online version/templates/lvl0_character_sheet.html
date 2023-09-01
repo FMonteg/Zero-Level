@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level 0 Character Sheet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='lvl0_sheet_style.css') }}">
+    
+</head>
+<body>
+    <div class="character-sheet">
+        <h1>Zero Level character (5E)</h1>
+        
+        <div class="section three-column">
+            <h2 class="section-title">Character Info</h2>
+            <div class="column">
+                <p><span class="attribute">Name:</span> {{ character.character_name }}</p>
+                <p><span class="attribute">Race:</span> {{ character.race }}</p>
+            </div>
+
+            <div class="column">
+                <p><span class="attribute">Level:</span> 0</p>
+                <p><span class="attribute">Job:</span> {{ character.occupation }}</p>
+            </div>
+
+            <div class="column">
+                <p><span class="attribute">Played by:</span> {{ character.player_name }}</p>
+                <p><span class="attribute">Gender:</span> {{ character.gender }}</p>
+            </div>
+            
+        </div>
+        
+        <div class="section three-column">
+            <h2 class="section-title">Attributes</h2>
+            <div class="column">
+                <p><span class="attribute">Strength:</span> {{ character.attributes[0] }} ({{ character.printable_modifier(character.attributes[0]) }})</p>
+                <p><span class="attribute">Dexterity:</span> {{ character.attributes[1] }} ({{ character.printable_modifier(character.attributes[1]) }})</p>
+                <p><span class="attribute">Constitution:</span> {{ character.attributes[2] }} ({{ character.printable_modifier(character.attributes[2]) }})</p>
+                <p><span class="attribute">Intelligence:</span> {{ character.attributes[3] }} ({{ character.printable_modifier(character.attributes[3]) }})</p>
+                <p><span class="attribute">Wisdom:</span> {{ character.attributes[4] }} ({{ character.printable_modifier(character.attributes[4]) }})</p>
+                <p><span class="attribute">Charisma:</span> {{ character.attributes[5] }} ({{ character.printable_modifier(character.attributes[5]) }})</p>
+            </div>
+
+            <div class="column">
+                <p><span class="attribute">Max HP:</span> {{ character.HP }}</p>
+                <p><span class="attribute">HP:</span> <input class="thin-input" type="text" name="remain_hp" placeholder={{ character.HP }}></p>
+                <p><span class="attribute">Initiative:</span> {{ character.initiative }}</p>
+                <p><span class="attribute">Armor Class:</span> {{ character.AC }}</p>
+                <p><span class="attribute">Proficiency:</span> {{ character.proficiency }} ({{ character.prof_mod }})</p>
+            </div>
+
+            <div class="column">
+                <p><span class="attribute">Weapon:</span> {{ character.weapon }}</p>
+                <p><span class="attribute">Attack Modifier:</span> {{ character.atk }}</p>
+                <p><span class="attribute">Damages:</span> {{ character.dmg }}</p>
+                <p><span class="attribute">Attributes:</span> {{ character.weapon_attributes }}</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Racial Traits</h2>
+            <div class="racial-traits">
+                {% for trait in character.racial_abilities %}
+                    <p><span class="trait-name">{{ trait }}</span>: {{ character.racial_traits_descriptions[trait] }}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Inventory</h2>
+            <div class="inventory">
+                <div class="starting-inventory">
+                    <div class="column">
+                        <p><span class="attribute">Weapon:</span> {{ character.weapon }}</p>
+                        <p><span class="attribute">Item:</span> {{ character.item }}</p>
+                        <p><span class="attribute">Trinket:</span> {{ character.trinket }}</p>
+                        <p><span class="attribute">Clothes:</span> {{ character.clothes }}</p>
+                        <p><span class="attribute">Money:</span> {{ character.money }}</p>
+                    </div>
+                    <div class="empty-column">
+                        <input type="text" name="additional_1" placeholder="Additional Items">
+                        <input type="text" name="additional_2" placeholder="...">
+                        <input type="text" name="additional_3">
+                        <input type="text" name="additional_4">
+                        <input type="text" name="additional_5">
+                    </div>
+                    <div class="empty-column">
+                        <input type="text" name="additional_6">
+                        <input type="text" name="additional_7">
+                        <input type="text" name="additional_8">
+                        <input type="text" name="additional_9">
+                        <input type="text" name="additional_10">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="buttons three-column">
+            <button class="refresh-button" type="button" onclick="refreshCharacter()">New Character</button>
+            <button class="back-button" onclick="navigateToForm()">Back to Creation</button>
+            <button class="save-button" disabled>Save/Export</button>
+        </div>
+    </div>
+
+    <script>
+        function refreshCharacter() {
+            location.reload(); // Reload the page
+        }
+        function navigateToForm() {
+        window.location.href = "{{ url_for('lvl0.level0') }}"; // Redirect to the given URL
+    }
+    </script>
+</body>
+</html>

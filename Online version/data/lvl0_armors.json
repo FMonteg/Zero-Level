@@ -1,0 +1,26 @@
+{
+    "Leather armor": [
+        11,
+        10
+    ],
+    "Hide armor": [
+        12,
+        2
+    ],
+    "Shield": [
+        12,
+        10
+    ],
+    "Padded armor": [
+        11,
+        10
+    ],
+    "Chain shirt": [
+        13,
+        2
+    ],
+    "Ring mail": [
+        14,
+        0
+    ]
+}

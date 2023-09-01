@@ -1,0 +1,437 @@
+{
+    "Human NONE": [
+        "Medium",
+        "30 ft",
+        [],
+        [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        [
+            "Inspiration",
+            "Focus"
+        ]
+    ],
+    "Halfling Lightfoot": [
+        "Small",
+        "25 ft",
+        [
+            "Halfling"
+        ],
+        [
+            0,
+            2,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Lucky",
+            "Halfling Nimbleness"
+        ]
+    ],
+    "Halfling Stout": [
+        "Small",
+        "25 ft",
+        [
+            "Halfling"
+        ],
+        [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0
+        ],
+        [
+            "Lucky",
+            "Halfling Nimbleness"
+        ]
+    ],
+    "Dwarf Hill": [
+        "Medium",
+        "25 ft",
+        [
+            "Dwarvish"
+        ],
+        [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Dwarven Resilience"
+        ]
+    ],
+    "Dwarf Mountain": [
+        "Medium",
+        "25 ft",
+        [
+            "Dwarvish"
+        ],
+        [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Dwarven Resilience"
+        ]
+    ],
+    "Gnome Rock": [
+        "Small",
+        "25 ft",
+        [
+            "Gnomish"
+        ],
+        [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Gnome Cunning"
+        ]
+    ],
+    "Gnome Forest": [
+        "Small",
+        "25 ft",
+        [
+            "Gnomish"
+        ],
+        [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Gnome Cunning"
+        ]
+    ],
+    "Tiefling NONE": [
+        "Medium",
+        "30 ft",
+        [
+            "Infernal"
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2
+        ],
+        [
+            "Darkvision 60 ft",
+            "Hellish Resistance"
+        ]
+    ],
+    "Goliath NONE": [
+        "Medium",
+        "30 ft",
+        [
+            "Giant"
+        ],
+        [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0
+        ],
+        [
+            "Stone's Endurance",
+            "Mountainborn"
+        ]
+    ],
+    "Elf High": [
+        "Medium",
+        "30 ft",
+        [
+            "Elvish"
+        ],
+        [
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Trance"
+        ]
+    ],
+    "Elf Wood": [
+        "Medium",
+        "30 ft",
+        [
+            "Elvish"
+        ],
+        [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Trance"
+        ]
+    ],
+    "Half-Orc NONE": [
+        "Medium",
+        "30 ft",
+        [
+            "Orcish"
+        ],
+        [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0
+        ],
+        [
+            "Darkvision 60 ft",
+            "Relentless Endurance"
+        ]
+    ],
+    "Aarakocra NONE": [
+        "Medium",
+        "25 ft",
+        [
+            "Aarakocra"
+        ],
+        [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0
+        ],
+        [
+            "Flight",
+            "Talons"
+        ]
+    ],
+    "Dragonborn Red": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Fire)",
+            "Breath Weapon (cone)"
+        ]
+    ],
+    "Dragonborn Blue": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Lightning)",
+            "Breath Weapon (line)"
+        ]
+    ],
+    "Dragonborn Green": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Poison)",
+            "Breath Weapon (cone)"
+        ]
+    ],
+    "Dragonborn White": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Cold)",
+            "Breath Weapon (cone)"
+        ]
+    ],
+    "Dragonborn Black": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Acid)",
+            "Breath Weapon (line)"
+        ]
+    ],
+    "Dragonborn Brass": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Fire)",
+            "Breath Weapon (line)"
+        ]
+    ],
+    "Dragonborn Copper": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Acid)",
+            "Breath Weapon (line)"
+        ]
+    ],
+    "Dragonborn Bronze": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Lightning)",
+            "Breath Weapon (line)"
+        ]
+    ],
+    "Dragonborn Silver": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Cold)",
+            "Breath Weapon (cone)"
+        ]
+    ],
+    "Dragonborn Gold": [
+        "Medium",
+        "30 ft",
+        [
+            "Draconic"
+        ],
+        [
+            2,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            "Damage Resistance (Fire)",
+            "Breath Weapon (cone)"
+        ]
+    ]
+}
